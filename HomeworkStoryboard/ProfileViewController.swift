@@ -9,6 +9,8 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    
+    weak var delegate: UIViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,12 +18,5 @@ class ProfileViewController: UIViewController {
         
     }
 
-    @IBAction func showDetailVC(_ sender: Any) {
-        if let vc = splitViewController?.viewControllers.last as? UINavigationController {
-            splitViewController?.showDetailViewController(vc.topViewController!, sender: nil)
-        }
-        
-    }
-    
 }
 

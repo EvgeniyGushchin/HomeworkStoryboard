@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zZB-i4-Equ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="HGF-kz-Eo9">
+            <objects>
+                <viewController id="zZB-i4-Equ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AQI-dk-AI2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GfV-5i-oxb" customClass="UserCard" customModule="HomeworkStoryboard" customModuleProvider="target">
+                                <rect key="frame" x="30" y="384" width="354" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ka9-2b-Gty"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GfV-5i-oxb" firstAttribute="centerY" secondItem="AQI-dk-AI2" secondAttribute="centerY" id="Dxl-vy-P1k"/>
+                            <constraint firstItem="h3L-dL-sxa" firstAttribute="trailing" secondItem="GfV-5i-oxb" secondAttribute="trailing" constant="30" id="Fgw-3Z-htW"/>
+                            <constraint firstItem="GfV-5i-oxb" firstAttribute="leading" secondItem="h3L-dL-sxa" secondAttribute="leading" constant="30" id="gq3-6q-bao"/>
+                            <constraint firstItem="GfV-5i-oxb" firstAttribute="centerX" secondItem="AQI-dk-AI2" secondAttribute="centerX" id="lhm-ct-iqY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h3L-dL-sxa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oa4-lx-YWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1284" y="119"/>
+        </scene>
+    </scenes>
+</document>
