@@ -19,6 +19,8 @@
 		651B85062316502300FF6119 /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B85052316502300FF6119 /* UserCard.swift */; };
 		651B85092316504400FF6119 /* UserCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651B85082316504400FF6119 /* UserCard.xib */; };
 		656BF4942323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4932323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift */; };
+		656BF4992323EBDA00B6DCA3 /* RunTimerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4982323EBDA00B6DCA3 /* RunTimerBehavior.swift */; };
+		656BF49B2323EC5A00B6DCA3 /* BenchmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF49A2323EC5A00B6DCA3 /* BenchmarkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		651B85052316502300FF6119 /* UserCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserCard.swift; path = ../UserCard.swift; sourceTree = "<group>"; };
 		651B85082316504400FF6119 /* UserCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCard.xib; sourceTree = "<group>"; };
 		656BF4932323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
+		656BF4982323EBDA00B6DCA3 /* RunTimerBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunTimerBehavior.swift; sourceTree = "<group>"; };
+		656BF49A2323EC5A00B6DCA3 /* BenchmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				656BF4932323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift */,
+				656BF4982323EBDA00B6DCA3 /* RunTimerBehavior.swift */,
 			);
 			path = Behavior;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				651B84EF23163E3900FF6119 /* ProfileViewController.swift */,
+				656BF49A2323EC5A00B6DCA3 /* BenchmarkViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -215,12 +221,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				65159E182318D49100B5E514 /* UIView.swift in Sources */,
+				656BF49B2323EC5A00B6DCA3 /* BenchmarkViewController.swift in Sources */,
 				651B84F023163E3900FF6119 /* ProfileViewController.swift in Sources */,
 				651B8501231648E100FF6119 /* RoundedButton.swift in Sources */,
 				65159E1B2318D64000B5E514 /* NibLoadable.swift in Sources */,
 				651B85062316502300FF6119 /* UserCard.swift in Sources */,
 				651B84EE23163E3900FF6119 /* AppDelegate.swift in Sources */,
 				656BF4942323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift in Sources */,
+				656BF4992323EBDA00B6DCA3 /* RunTimerBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

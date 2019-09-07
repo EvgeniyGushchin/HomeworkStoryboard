@@ -118,7 +118,7 @@
         <!--Benchmark-->
         <scene sceneID="31T-G0-OPa">
             <objects>
-                <viewController id="s1S-5v-Ird" userLabel="Benchmark" sceneMemberID="viewController">
+                <viewController id="s1S-5v-Ird" userLabel="Benchmark" customClass="BenchmarkViewController" customModule="HomeworkStoryboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DZz-GT-SLq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
