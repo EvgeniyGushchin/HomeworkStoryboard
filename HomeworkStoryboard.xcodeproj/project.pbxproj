@@ -24,6 +24,7 @@
 		656BF49D2323F5F500B6DCA3 /* NightModeBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF49C2323F5F500B6DCA3 /* NightModeBehavior.swift */; };
 		656BF49F2323FF1500B6DCA3 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF49E2323FF1500B6DCA3 /* TabController.swift */; };
 		656BF4A12324051E00B6DCA3 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4A02324051E00B6DCA3 /* UIApplication.swift */; };
+		656BF4A3232407FE00B6DCA3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4A2232407FE00B6DCA3 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		656BF49C2323F5F500B6DCA3 /* NightModeBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightModeBehavior.swift; sourceTree = "<group>"; };
 		656BF49E2323FF1500B6DCA3 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		656BF4A02324051E00B6DCA3 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		656BF4A2232407FE00B6DCA3 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				651B84EF23163E3900FF6119 /* ProfileViewController.swift */,
 				656BF49A2323EC5A00B6DCA3 /* BenchmarkViewController.swift */,
+				656BF4A2232407FE00B6DCA3 /* ThirdViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				651B84EE23163E3900FF6119 /* AppDelegate.swift in Sources */,
 				656BF4942323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift in Sources */,
 				656BF4992323EBDA00B6DCA3 /* RunTimerBehavior.swift in Sources */,
+				656BF4A3232407FE00B6DCA3 /* ThirdViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

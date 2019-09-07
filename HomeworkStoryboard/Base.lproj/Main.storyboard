@@ -152,7 +152,7 @@
         <!--Feed-->
         <scene sceneID="96P-f6-809">
             <objects>
-                <viewController id="BAP-tn-jPT" userLabel="Feed" sceneMemberID="viewController">
+                <viewController title="I'm A" id="BAP-tn-jPT" userLabel="Feed" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G3O-Qq-7Uu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,6 +188,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9s1-op-HLR">
                                 <rect key="frame" x="0.0" y="602" width="414" height="211"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="c4g-pO-sa8" kind="show" id="9Ct-2r-61B"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -201,7 +204,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qbr-CS-tMa"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wZp-Sg-ymB"/>
+                    <navigationItem key="navigationItem" title="I'm A" id="wZp-Sg-ymB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LKM-f9-lXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -292,6 +295,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODY-jX-nPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="722" y="-40"/>
+        </scene>
+        <!--I'm C-->
+        <scene sceneID="ezo-tF-vw9">
+            <objects>
+                <viewController id="z5x-OL-HXu" customClass="ThirdViewController" customModule="HomeworkStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yMp-Sh-Hmo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAW-eV-nqU">
+                                <rect key="frame" x="163.5" y="398" width="87" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="21u-aA-Q9h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Pop To Root"/>
+                                <connections>
+                                    <action selector="onPushToRoot:" destination="z5x-OL-HXu" eventType="touchUpInside" id="C05-8J-hjb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LAW-eV-nqU" firstAttribute="centerY" secondItem="yMp-Sh-Hmo" secondAttribute="centerY" id="YE2-EJ-PUr"/>
+                            <constraint firstItem="LAW-eV-nqU" firstAttribute="centerX" secondItem="yMp-Sh-Hmo" secondAttribute="centerX" id="zp4-qe-M0h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yH9-dc-LY8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="I'm C" id="CBY-yV-vTG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zff-zH-Qrj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3846" y="-2004"/>
+        </scene>
+        <!--I'm B-->
+        <scene sceneID="qRC-UN-MQ3">
+            <objects>
+                <viewController title="I'm B" id="c4g-pO-sa8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="loQ-L0-7Rs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttp-zW-qCc">
+                                <rect key="frame" x="160" y="398" width="94" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="VfC-kK-dOx"/>
+                                </constraints>
+                                <state key="normal" title="Push Next VC"/>
+                                <connections>
+                                    <segue destination="z5x-OL-HXu" kind="show" id="heP-Ey-qvU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ttp-zW-qCc" firstAttribute="centerX" secondItem="loQ-L0-7Rs" secondAttribute="centerX" id="bhp-uF-fBi"/>
+                            <constraint firstItem="ttp-zW-qCc" firstAttribute="centerY" secondItem="loQ-L0-7Rs" secondAttribute="centerY" id="rdc-Qu-NeZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="opA-oY-2MU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="I'm B" id="jls-eU-LsP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8D-fK-miI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3128" y="-2004"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
