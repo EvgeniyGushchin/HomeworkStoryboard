@@ -75,15 +75,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1cx-PS-cAw">
-                                <rect key="frame" x="180" y="400.5" width="54" height="95"/>
+                                <rect key="frame" x="172.5" y="400.5" width="69" height="95"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBd-YP-rS6">
-                                        <rect key="frame" x="2.5" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="10" y="0.0" width="51" height="31"/>
                                     </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiX-cJ-x6N" customClass="RoundedButton" customModule="HomeworkStoryboard" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="61" width="54" height="34"/>
+                                        <rect key="frame" x="0.0" y="61" width="69" height="34"/>
                                         <color key="backgroundColor" red="0.040765620769999997" green="0.54895389080000001" blue="0.90606522560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Push VC"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="normalTitleColor">
                                                 <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

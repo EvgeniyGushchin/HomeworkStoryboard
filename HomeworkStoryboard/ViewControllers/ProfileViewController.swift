@@ -11,12 +11,16 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     weak var delegate: UIViewController?
-
+        
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        addBehaviors(behaviors: [NightModeBehavior()])
     }
-
+    
 }
 

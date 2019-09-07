@@ -21,6 +21,9 @@
 		656BF4942323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4932323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift */; };
 		656BF4992323EBDA00B6DCA3 /* RunTimerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4982323EBDA00B6DCA3 /* RunTimerBehavior.swift */; };
 		656BF49B2323EC5A00B6DCA3 /* BenchmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF49A2323EC5A00B6DCA3 /* BenchmarkViewController.swift */; };
+		656BF49D2323F5F500B6DCA3 /* NightModeBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF49C2323F5F500B6DCA3 /* NightModeBehavior.swift */; };
+		656BF49F2323FF1500B6DCA3 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF49E2323FF1500B6DCA3 /* TabController.swift */; };
+		656BF4A12324051E00B6DCA3 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4A02324051E00B6DCA3 /* UIApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		656BF4932323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
 		656BF4982323EBDA00B6DCA3 /* RunTimerBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunTimerBehavior.swift; sourceTree = "<group>"; };
 		656BF49A2323EC5A00B6DCA3 /* BenchmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkViewController.swift; sourceTree = "<group>"; };
+		656BF49C2323F5F500B6DCA3 /* NightModeBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightModeBehavior.swift; sourceTree = "<group>"; };
+		656BF49E2323FF1500B6DCA3 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		656BF4A02324051E00B6DCA3 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				65159E172318D49100B5E514 /* UIView.swift */,
+				656BF49E2323FF1500B6DCA3 /* TabController.swift */,
+				656BF4A02324051E00B6DCA3 /* UIApplication.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -134,6 +142,7 @@
 			children = (
 				656BF4932323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift */,
 				656BF4982323EBDA00B6DCA3 /* RunTimerBehavior.swift */,
+				656BF49C2323F5F500B6DCA3 /* NightModeBehavior.swift */,
 			);
 			path = Behavior;
 			sourceTree = "<group>";
@@ -220,9 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656BF4A12324051E00B6DCA3 /* UIApplication.swift in Sources */,
 				65159E182318D49100B5E514 /* UIView.swift in Sources */,
 				656BF49B2323EC5A00B6DCA3 /* BenchmarkViewController.swift in Sources */,
 				651B84F023163E3900FF6119 /* ProfileViewController.swift in Sources */,
+				656BF49D2323F5F500B6DCA3 /* NightModeBehavior.swift in Sources */,
+				656BF49F2323FF1500B6DCA3 /* TabController.swift in Sources */,
 				651B8501231648E100FF6119 /* RoundedButton.swift in Sources */,
 				65159E1B2318D64000B5E514 /* NibLoadable.swift in Sources */,
 				651B85062316502300FF6119 /* UserCard.swift in Sources */,
