@@ -18,6 +18,7 @@
 		651B850423164F4000FF6119 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651B850223164F4000FF6119 /* Detail.storyboard */; };
 		651B85062316502300FF6119 /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B85052316502300FF6119 /* UserCard.swift */; };
 		651B85092316504400FF6119 /* UserCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651B85082316504400FF6119 /* UserCard.xib */; };
+		656BF4942323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4932323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		651B850323164F4000FF6119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HomeworkStoryboard/Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
 		651B85052316502300FF6119 /* UserCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserCard.swift; path = ../UserCard.swift; sourceTree = "<group>"; };
 		651B85082316504400FF6119 /* UserCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCard.xib; sourceTree = "<group>"; };
+		656BF4932323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +84,12 @@
 		651B84EC23163E3900FF6119 /* HomeworkStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				656BF4952323E78B00B6DCA3 /* Utils */,
 				65159E192318D62200B5E514 /* Protocols */,
 				65159E162318D47F00B5E514 /* Extensions */,
 				651B84FF231648B900FF6119 /* CustomViews */,
 				651B84ED23163E3900FF6119 /* AppDelegate.swift */,
-				651B84EF23163E3900FF6119 /* ProfileViewController.swift */,
+				656BF4972323E84B00B6DCA3 /* ViewControllers */,
 				651B850223164F4000FF6119 /* Detail.storyboard */,
 				651B84F123163E3900FF6119 /* Main.storyboard */,
 				651B84F423163E3A00FF6119 /* Assets.xcassets */,
@@ -112,6 +115,30 @@
 				651B85082316504400FF6119 /* UserCard.xib */,
 			);
 			path = UserCard;
+			sourceTree = "<group>";
+		};
+		656BF4952323E78B00B6DCA3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				656BF4962323E79D00B6DCA3 /* Behavior */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		656BF4962323E79D00B6DCA3 /* Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				656BF4932323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift */,
+			);
+			path = Behavior;
+			sourceTree = "<group>";
+		};
+		656BF4972323E84B00B6DCA3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				651B84EF23163E3900FF6119 /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +220,7 @@
 				65159E1B2318D64000B5E514 /* NibLoadable.swift in Sources */,
 				651B85062316502300FF6119 /* UserCard.swift in Sources */,
 				651B84EE23163E3900FF6119 /* AppDelegate.swift in Sources */,
+				656BF4942323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
