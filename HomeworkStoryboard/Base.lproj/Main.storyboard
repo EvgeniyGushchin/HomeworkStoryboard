@@ -123,27 +123,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jld-F8-bxB">
-                                <rect key="frame" x="40" y="128" width="334" height="275.5"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yzd-II-nKh">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyL-Bg-s6N">
-                                <rect key="frame" x="177" y="433" width="60" height="30"/>
-                                <state key="normal" title="Push me"/>
-                            </button>
+                                <collectionViewLayout key="collectionViewLayout" id="SWg-Kc-4AA" customClass="SomeLayout" customModule="HomeworkStoryboard" customModuleProvider="target"/>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="s1S-5v-Ird" id="Khj-p9-Acx"/>
+                                    <outlet property="delegate" destination="s1S-5v-Ird" id="SAZ-YI-eCV"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Jld-F8-bxB" firstAttribute="top" secondItem="Scx-ac-Giz" secondAttribute="top" constant="40" id="4Ag-cJ-7SI"/>
-                            <constraint firstItem="yyL-Bg-s6N" firstAttribute="centerX" secondItem="DZz-GT-SLq" secondAttribute="centerX" id="CN1-05-M7R"/>
-                            <constraint firstItem="yyL-Bg-s6N" firstAttribute="firstBaseline" secondItem="Jld-F8-bxB" secondAttribute="baseline" constant="50" id="MiO-NG-nrt"/>
-                            <constraint firstItem="yyL-Bg-s6N" firstAttribute="centerY" secondItem="DZz-GT-SLq" secondAttribute="centerY" id="PC2-Yl-Da2"/>
-                            <constraint firstItem="Jld-F8-bxB" firstAttribute="leading" secondItem="Scx-ac-Giz" secondAttribute="leading" constant="40" id="bVU-d6-d29"/>
-                            <constraint firstItem="Scx-ac-Giz" firstAttribute="trailing" secondItem="Jld-F8-bxB" secondAttribute="trailing" constant="40" id="w66-Tl-m3T"/>
+                            <constraint firstItem="Yzd-II-nKh" firstAttribute="top" secondItem="Scx-ac-Giz" secondAttribute="top" id="LNj-FJ-Nyn"/>
+                            <constraint firstItem="Scx-ac-Giz" firstAttribute="trailing" secondItem="Yzd-II-nKh" secondAttribute="trailing" id="LWG-PU-Wov"/>
+                            <constraint firstItem="Scx-ac-Giz" firstAttribute="bottom" secondItem="Yzd-II-nKh" secondAttribute="bottom" id="Pii-9n-2VA"/>
+                            <constraint firstItem="Yzd-II-nKh" firstAttribute="leading" secondItem="Scx-ac-Giz" secondAttribute="leading" id="a9X-ld-sFe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Scx-ac-Giz"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eaS-8h-2Vc"/>
+                    <navigationItem key="navigationItem" id="eaS-8h-2Vc">
+                        <barButtonItem key="rightBarButtonItem" title="Toggle" id="ErP-G3-Vxq">
+                            <connections>
+                                <action selector="toggleLayout:" destination="s1S-5v-Ird" id="LXY-bk-MTJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="Yzd-II-nKh" id="hFr-FH-crl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hiU-0V-fTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
