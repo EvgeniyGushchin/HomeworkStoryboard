@@ -14,6 +14,8 @@ protocol RunTimerProtocol {
 }
 
 struct RunTimerBehavior: ViewControllerLifecycleBehavior {
+    
+    var timerAction: (()->())?
 
     func beforeDisappearing(_ viewController: UIViewController) {
         guard let vc = viewController as? RunTimerProtocol, let timer = vc.timer else {
@@ -28,7 +30,7 @@ struct RunTimerBehavior: ViewControllerLifecycleBehavior {
         
         if let vc = viewController as? RunTimerProtocol {
             let timer = Timer(timeInterval: 1.0, repeats: true) { timer in
-                print(Date())
+                self.timerAction?()
             }
             RunLoop.current.add(timer, forMode: .common)
             vc.setTimer(timer: timer)

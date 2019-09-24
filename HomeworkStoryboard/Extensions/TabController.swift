@@ -20,7 +20,6 @@ extension UITabBarController {
     
     open override var childForStatusBarHidden: UIViewController? {
         if let navigationController = self.selectedViewController as? UINavigationController {
-            print(navigationController.viewControllers.last)
             return navigationController.viewControllers.last
         } else {
              return self.selectedViewController
