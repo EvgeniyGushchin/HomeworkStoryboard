@@ -96,6 +96,9 @@ class SegmentLayer: CAShapeLayer {
     }
     
     func refreshTextLayer() {
+        guard bounds.size != .zero, !angles.endAngle.isNaN, !angles.startAngle.isNaN  else {
+            return
+        }
         textLayer.string = NSAttributedString(string: title, attributes: textAttributes)
         
         let halfAngle = angles.startAngle + (angles.endAngle - angles.startAngle) * 0.5

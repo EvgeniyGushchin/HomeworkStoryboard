@@ -19,7 +19,7 @@ class PieChartView: UIView {
     let kAnimationCompletionBlock = "animationCompletionBlock"
     
     var animated = true
-    var animationDuration = 4.0
+    var animationDuration = 2.0
     
     var segments: [Segment] = [] {
         didSet {
