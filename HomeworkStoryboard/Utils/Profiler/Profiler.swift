@@ -11,15 +11,15 @@ import Foundation
 class Profiler {
   class func runClosureForTime(_ closure: (() -> Void)!) -> TimeInterval {
     //Timestamp before
-    let startDate = Date()
+    let startDate = CFAbsoluteTimeGetCurrent()
     //Run the closure
     closure()
     
     //Timestamp after
-    let endDate = Date()
+    let endDate = CFAbsoluteTimeGetCurrent()
     
     //Calculate the interval.
-    let interval = endDate.timeIntervalSince(startDate)
+    let interval = endDate - startDate
     
     return interval
   }
