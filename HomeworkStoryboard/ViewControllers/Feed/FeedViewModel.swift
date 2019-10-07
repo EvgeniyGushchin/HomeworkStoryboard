@@ -37,7 +37,6 @@ struct FeedViewModel {
         case "Dictionary":
             vc = storyboard.instantiateViewController(withIdentifier: "DictionaryViewController")
         case "SuffixArray":
-            let storyboard = UIStoryboard(name: "DataStructures", bundle: nil)
             // TODO
             vc = storyboard.instantiateViewController(withIdentifier: "DictionaryViewController")
         default:
