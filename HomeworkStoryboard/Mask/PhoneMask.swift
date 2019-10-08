@@ -64,6 +64,14 @@ struct PhoneMask {
         return attributedString
     }
     
+    func fullAttributedMaskWithPositionOffset(string: String) -> (string: NSAttributedString, offset: Int) {
+        let masked = mask(string: string)
+        let attributedString = NSMutableAttributedString(string: masked, attributes: textAttributes)
+        autocompleteWithPlaceholder(masked: masked, attributed: attributedString)
+        let position = masked.count
+        return (attributedString, position)
+    }
+    
     private func autocompleteWithPlaceholder(masked: String, attributed: NSMutableAttributedString) {
         if maskString.count > attributed.length {
             let placeholderRange = rangeOfPlaceholder(masked: masked)
