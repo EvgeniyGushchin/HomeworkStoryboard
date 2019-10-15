@@ -32,7 +32,45 @@
 		656BF49F2323FF1500B6DCA3 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF49E2323FF1500B6DCA3 /* TabController.swift */; };
 		656BF4A12324051E00B6DCA3 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4A02324051E00B6DCA3 /* UIApplication.swift */; };
 		656BF4A3232407FE00B6DCA3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4A2232407FE00B6DCA3 /* ThirdViewController.swift */; };
+		657643AF2354392000AAE077 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657643AE2354391F00AAE077 /* ShareViewController.swift */; };
+		657643B22354392000AAE077 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657643B02354392000AAE077 /* MainInterface.storyboard */; };
+		657643B62354392000AAE077 /* HomeworkShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 657643AC2354391F00AAE077 /* HomeworkShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		657643C023547B4800AAE077 /* SharedTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657643BF23547B4800AAE077 /* SharedTextViewController.swift */; };
+		657643C223547F6C00AAE077 /* SharedTextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657643C123547F6C00AAE077 /* SharedTextViewModel.swift */; };
+		657643C42355EF9A00AAE077 /* StringLocaleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657643C32355EF9900AAE077 /* StringLocaleFormatter.swift */; };
+		657643CC2355F08C00AAE077 /* StringLocaleFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657643CB2355F08C00AAE077 /* StringLocaleFormatterTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		657643B42354392000AAE077 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 651B84E223163E3900FF6119 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 657643AB2354391F00AAE077;
+			remoteInfo = HomeworkShareExtension;
+		};
+		657643CE2355F08C00AAE077 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 651B84E223163E3900FF6119 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 651B84E923163E3900FF6119;
+			remoteInfo = HomeworkStoryboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		657643B72354392000AAE077 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				657643B62354392000AAE077 /* HomeworkShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		65144308232CBEA300931300 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -62,10 +100,36 @@
 		656BF49E2323FF1500B6DCA3 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		656BF4A02324051E00B6DCA3 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		656BF4A2232407FE00B6DCA3 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		657643AC2354391F00AAE077 /* HomeworkShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HomeworkShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		657643AE2354391F00AAE077 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		657643B12354392000AAE077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		657643B32354392000AAE077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		657643BB23543A8800AAE077 /* HomeworkStoryboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeworkStoryboard.entitlements; sourceTree = "<group>"; };
+		657643BC23544E4400AAE077 /* HomeworkShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeworkShareExtension.entitlements; sourceTree = "<group>"; };
+		657643BF23547B4800AAE077 /* SharedTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTextViewController.swift; sourceTree = "<group>"; };
+		657643C123547F6C00AAE077 /* SharedTextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTextViewModel.swift; sourceTree = "<group>"; };
+		657643C32355EF9900AAE077 /* StringLocaleFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocaleFormatter.swift; sourceTree = "<group>"; };
+		657643C92355F08C00AAE077 /* HomeworkStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeworkStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		657643CB2355F08C00AAE077 /* StringLocaleFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocaleFormatterTests.swift; sourceTree = "<group>"; };
+		657643CD2355F08C00AAE077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		651B84E723163E3900FF6119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657643A92354391F00AAE077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657643C62355F08C00AAE077 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -124,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				651B84EC23163E3900FF6119 /* HomeworkStoryboard */,
+				657643AD2354391F00AAE077 /* HomeworkShareExtension */,
+				657643CA2355F08C00AAE077 /* HomeworkStoryboardTests */,
 				651B84EB23163E3900FF6119 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				651B84EA23163E3900FF6119 /* HomeworkStoryboard.app */,
+				657643AC2354391F00AAE077 /* HomeworkShareExtension.appex */,
+				657643C92355F08C00AAE077 /* HomeworkStoryboardTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,17 +207,19 @@
 		651B84EC23163E3900FF6119 /* HomeworkStoryboard */ = {
 			isa = PBXGroup;
 			children = (
-				656BF4952323E78B00B6DCA3 /* Utils */,
-				65159E192318D62200B5E514 /* Protocols */,
-				65159E162318D47F00B5E514 /* Extensions */,
-				651B84FF231648B900FF6119 /* CustomViews */,
 				651B84ED23163E3900FF6119 /* AppDelegate.swift */,
-				656BF4972323E84B00B6DCA3 /* ViewControllers */,
-				651B850223164F4000FF6119 /* Detail.storyboard */,
-				651B84F123163E3900FF6119 /* Main.storyboard */,
 				651B84F423163E3A00FF6119 /* Assets.xcassets */,
-				651B84F623163E3A00FF6119 /* LaunchScreen.storyboard */,
+				651B84FF231648B900FF6119 /* CustomViews */,
+				65159E162318D47F00B5E514 /* Extensions */,
+				65159E192318D62200B5E514 /* Protocols */,
+				657643D3235601B900AAE077 /* Services */,
+				656BF4952323E78B00B6DCA3 /* Utils */,
+				656BF4972323E84B00B6DCA3 /* ViewControllers */,
+				657643BB23543A8800AAE077 /* HomeworkStoryboard.entitlements */,
 				651B84F923163E3A00FF6119 /* Info.plist */,
+				651B84F623163E3A00FF6119 /* LaunchScreen.storyboard */,
+				651B84F123163E3900FF6119 /* Main.storyboard */,
+				651B850223164F4000FF6119 /* Detail.storyboard */,
 			);
 			path = HomeworkStoryboard;
 			sourceTree = "<group>";
@@ -186,6 +256,7 @@
 			children = (
 				65658588232D5DFB00E6547D /* Layouts */,
 				656BF4962323E79D00B6DCA3 /* Behavior */,
+				657643C32355EF9900AAE077 /* StringLocaleFormatter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -203,13 +274,50 @@
 		656BF4972323E84B00B6DCA3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				657643BE23547B2700AAE077 /* SharedText */,
 				6514430C232CC10E00931300 /* SessionSummary */,
 				65144307232CBE8E00931300 /* Feed */,
-				651B84EF23163E3900FF6119 /* ProfileViewController.swift */,
 				6514430F232CC45000931300 /* BenchMark */,
 				656BF4A2232407FE00B6DCA3 /* ThirdViewController.swift */,
+				651B84EF23163E3900FF6119 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		657643AD2354391F00AAE077 /* HomeworkShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				657643BC23544E4400AAE077 /* HomeworkShareExtension.entitlements */,
+				657643AE2354391F00AAE077 /* ShareViewController.swift */,
+				657643B02354392000AAE077 /* MainInterface.storyboard */,
+				657643B32354392000AAE077 /* Info.plist */,
+			);
+			path = HomeworkShareExtension;
+			sourceTree = "<group>";
+		};
+		657643BE23547B2700AAE077 /* SharedText */ = {
+			isa = PBXGroup;
+			children = (
+				657643BF23547B4800AAE077 /* SharedTextViewController.swift */,
+				657643C123547F6C00AAE077 /* SharedTextViewModel.swift */,
+			);
+			path = SharedText;
+			sourceTree = "<group>";
+		};
+		657643CA2355F08C00AAE077 /* HomeworkStoryboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				657643CB2355F08C00AAE077 /* StringLocaleFormatterTests.swift */,
+				657643CD2355F08C00AAE077 /* Info.plist */,
+			);
+			path = HomeworkStoryboardTests;
+			sourceTree = "<group>";
+		};
+		657643D3235601B900AAE077 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,15 +330,52 @@
 				651B84E623163E3900FF6119 /* Sources */,
 				651B84E723163E3900FF6119 /* Frameworks */,
 				651B84E823163E3900FF6119 /* Resources */,
+				657643B72354392000AAE077 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				657643B52354392000AAE077 /* PBXTargetDependency */,
 			);
 			name = HomeworkStoryboard;
 			productName = HomeworkStoryboard;
 			productReference = 651B84EA23163E3900FF6119 /* HomeworkStoryboard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		657643AB2354391F00AAE077 /* HomeworkShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 657643BA2354392000AAE077 /* Build configuration list for PBXNativeTarget "HomeworkShareExtension" */;
+			buildPhases = (
+				657643A82354391F00AAE077 /* Sources */,
+				657643A92354391F00AAE077 /* Frameworks */,
+				657643AA2354391F00AAE077 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeworkShareExtension;
+			productName = HomeworkShareExtension;
+			productReference = 657643AC2354391F00AAE077 /* HomeworkShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		657643C82355F08C00AAE077 /* HomeworkStoryboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 657643D02355F08C00AAE077 /* Build configuration list for PBXNativeTarget "HomeworkStoryboardTests" */;
+			buildPhases = (
+				657643C52355F08C00AAE077 /* Sources */,
+				657643C62355F08C00AAE077 /* Frameworks */,
+				657643C72355F08C00AAE077 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				657643CF2355F08C00AAE077 /* PBXTargetDependency */,
+			);
+			name = HomeworkStoryboardTests;
+			productName = HomeworkStoryboardTests;
+			productReference = 657643C92355F08C00AAE077 /* HomeworkStoryboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -238,12 +383,19 @@
 		651B84E223163E3900FF6119 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = EG;
 				TargetAttributes = {
 					651B84E923163E3900FF6119 = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					657643AB2354391F00AAE077 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					657643C82355F08C00AAE077 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 651B84E923163E3900FF6119;
 					};
 				};
 			};
@@ -261,6 +413,8 @@
 			projectRoot = "";
 			targets = (
 				651B84E923163E3900FF6119 /* HomeworkStoryboard */,
+				657643AB2354391F00AAE077 /* HomeworkShareExtension */,
+				657643C82355F08C00AAE077 /* HomeworkStoryboardTests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,6 +433,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		657643AA2354391F00AAE077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657643B22354392000AAE077 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657643C72355F08C00AAE077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -289,12 +458,15 @@
 				656BF4A12324051E00B6DCA3 /* UIApplication.swift in Sources */,
 				65159E182318D49100B5E514 /* UIView.swift in Sources */,
 				656BF49B2323EC5A00B6DCA3 /* BenchmarkViewController.swift in Sources */,
+				657643C42355EF9A00AAE077 /* StringLocaleFormatter.swift in Sources */,
 				651B84F023163E3900FF6119 /* ProfileViewController.swift in Sources */,
+				657643C023547B4800AAE077 /* SharedTextViewController.swift in Sources */,
 				656BF49D2323F5F500B6DCA3 /* NightModeBehavior.swift in Sources */,
 				6565858A232D5E0C00E6547D /* SomeLayout.swift in Sources */,
 				6565858C232D63D800E6547D /* ListLayout.swift in Sources */,
 				65658586232D554000E6547D /* BenchMarkViewModel.swift in Sources */,
 				656BF49F2323FF1500B6DCA3 /* TabController.swift in Sources */,
+				657643C223547F6C00AAE077 /* SharedTextViewModel.swift in Sources */,
 				65144309232CBEA300931300 /* FeedViewController.swift in Sources */,
 				651B8501231648E100FF6119 /* RoundedButton.swift in Sources */,
 				65159E1B2318D64000B5E514 /* NibLoadable.swift in Sources */,
@@ -308,7 +480,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		657643A82354391F00AAE077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657643AF2354392000AAE077 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657643C52355F08C00AAE077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657643CC2355F08C00AAE077 /* StringLocaleFormatterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		657643B52354392000AAE077 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 657643AB2354391F00AAE077 /* HomeworkShareExtension */;
+			targetProxy = 657643B42354392000AAE077 /* PBXContainerItemProxy */;
+		};
+		657643CF2355F08C00AAE077 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 651B84E923163E3900FF6119 /* HomeworkStoryboard */;
+			targetProxy = 657643CE2355F08C00AAE077 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		651B84F123163E3900FF6119 /* Main.storyboard */ = {
@@ -333,6 +534,14 @@
 				651B850323164F4000FF6119 /* Base */,
 			);
 			name = Detail.storyboard;
+			sourceTree = "<group>";
+		};
+		657643B02354392000AAE077 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				657643B12354392000AAE077 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -457,7 +666,9 @@
 		651B84FD23163E3A00FF6119 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HomeworkStoryboard/HomeworkStoryboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8X33342AT8;
 				INFOPLIST_FILE = HomeworkStoryboard/Info.plist;
@@ -475,7 +686,9 @@
 		651B84FE23163E3A00FF6119 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HomeworkStoryboard/HomeworkStoryboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8X33342AT8;
 				INFOPLIST_FILE = HomeworkStoryboard/Info.plist;
@@ -487,6 +700,90 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		657643B82354392000AAE077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HomeworkShareExtension/HomeworkShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X33342AT8;
+				INFOPLIST_FILE = HomeworkShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egushchin.HomeworkStoryboard.HomeworkShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		657643B92354392000AAE077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HomeworkShareExtension/HomeworkShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X33342AT8;
+				INFOPLIST_FILE = HomeworkShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egushchin.HomeworkStoryboard.HomeworkShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		657643D12355F08C00AAE077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X33342AT8;
+				INFOPLIST_FILE = HomeworkStoryboardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egushchin.HomeworkStoryboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeworkStoryboard.app/HomeworkStoryboard";
+			};
+			name = Debug;
+		};
+		657643D22355F08C00AAE077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X33342AT8;
+				INFOPLIST_FILE = HomeworkStoryboardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egushchin.HomeworkStoryboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeworkStoryboard.app/HomeworkStoryboard";
 			};
 			name = Release;
 		};
@@ -507,6 +804,24 @@
 			buildConfigurations = (
 				651B84FD23163E3A00FF6119 /* Debug */,
 				651B84FE23163E3A00FF6119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		657643BA2354392000AAE077 /* Build configuration list for PBXNativeTarget "HomeworkShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				657643B82354392000AAE077 /* Debug */,
+				657643B92354392000AAE077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		657643D02355F08C00AAE077 /* Build configuration list for PBXNativeTarget "HomeworkStoryboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				657643D12355F08C00AAE077 /* Debug */,
+				657643D22355F08C00AAE077 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
