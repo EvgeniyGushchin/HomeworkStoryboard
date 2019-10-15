@@ -57,6 +57,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         print(#function)
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        if let host = url.host, host == "text" {
+            switchToProfile()
+        }
+        return true
+    }
+}
+
+extension AppDelegate {
+    
+    func switchToProfile() {
+        guard let splitViewController = window?.rootViewController as? UISplitViewController,
+        let leftNavController = splitViewController.viewControllers.first as? UITabBarController
+        else { fatalError() }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let sharedTextVC = storyboard.instantiateViewController(withIdentifier: String(describing: SharedTextViewController.self))
+        leftNavController.selectedIndex = 2
+        
+        guard let navController = leftNavController.selectedViewController as? UINavigationController else {
+            fatalError("didn't find Navigation controller. Get \(String(describing: leftNavController.selectedViewController)) instead")
+        }
+        navController.pushViewController(sharedTextVC, animated: false)
+    }
 }
 
 extension AppDelegate: UISplitViewControllerDelegate {

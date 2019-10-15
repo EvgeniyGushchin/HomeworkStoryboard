@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fJd-Ru-66m">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fJd-Ru-66m">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,7 +35,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HTX-iB-XeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-659" y="-39"/>
+            <point key="canvasLocation" x="-643" y="79"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xzg-Gg-E4S">
@@ -64,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gnD-Un-kQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87" y="-40"/>
+            <point key="canvasLocation" x="103" y="78"/>
         </scene>
         <!--Profile-->
         <scene sceneID="tne-QT-ifu">
@@ -109,11 +109,64 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5hN-m0-QBh"/>
+                    <navigationItem key="navigationItem" id="5hN-m0-QBh">
+                        <barButtonItem key="rightBarButtonItem" title="Shared" id="hhy-1u-5OE">
+                            <connections>
+                                <segue destination="Dq2-u0-kgT" kind="show" id="LV6-Eu-m8j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2350.7246376811595" y="-645.53571428571422"/>
+        </scene>
+        <!--Shared Text-->
+        <scene sceneID="jcW-i6-uh0">
+            <objects>
+                <viewController storyboardIdentifier="SharedTextViewController" title="Shared Text" id="Dq2-u0-kgT" customClass="SharedTextViewController" customModule="HomeworkStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JSx-JU-GyD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hSx-ya-oAw">
+                                <rect key="frame" x="114.5" y="188" width="185" height="32"/>
+                                <segments>
+                                    <segment title="USA"/>
+                                    <segment title="France"/>
+                                    <segment title="China"/>
+                                </segments>
+                                <connections>
+                                    <action selector="localeChanged:" destination="Dq2-u0-kgT" eventType="valueChanged" id="6J2-XN-NBQ"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgd-Fu-f32">
+                                <rect key="frame" x="20" y="259" width="374" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Sgd-Fu-f32" firstAttribute="leading" secondItem="8OR-sL-BDf" secondAttribute="leading" constant="20" id="AWi-f4-dxZ"/>
+                            <constraint firstItem="8OR-sL-BDf" firstAttribute="trailing" secondItem="Sgd-Fu-f32" secondAttribute="trailing" constant="20" id="POt-aa-kaB"/>
+                            <constraint firstItem="hSx-ya-oAw" firstAttribute="centerX" secondItem="JSx-JU-GyD" secondAttribute="centerX" id="Qdx-I0-eZ7"/>
+                            <constraint firstItem="8OR-sL-BDf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hSx-ya-oAw" secondAttribute="trailing" constant="20" id="eOX-WL-Sy2"/>
+                            <constraint firstItem="Sgd-Fu-f32" firstAttribute="top" secondItem="hSx-ya-oAw" secondAttribute="bottom" constant="40" id="fbc-0m-3mf"/>
+                            <constraint firstItem="hSx-ya-oAw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8OR-sL-BDf" secondAttribute="leading" constant="20" id="fjF-Fu-0WV"/>
+                            <constraint firstItem="hSx-ya-oAw" firstAttribute="top" secondItem="8OR-sL-BDf" secondAttribute="top" constant="100" id="pdD-jX-kSo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8OR-sL-BDf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mod-xg-ZXO"/>
+                    <connections>
+                        <outlet property="sharedTextLabel" destination="Sgd-Fu-f32" id="7Oo-IM-nOp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OU2-zs-hxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3323" y="-647"/>
         </scene>
         <!--Benchmark-->
         <scene sceneID="31T-G0-OPa">
@@ -293,7 +346,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODY-jX-nPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="722" y="-40"/>
+            <point key="canvasLocation" x="738" y="78"/>
         </scene>
         <!--I'm C-->
         <scene sceneID="ezo-tF-vw9">
