@@ -10,7 +10,7 @@ import UIKit
 
 class FeedViewController: UIViewController {
     
-    let numberOfRows = 20
+    var viewModel = FeedViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,14 +23,14 @@ class FeedViewController: UIViewController {
 extension FeedViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numberOfRows
+        return viewModel.numberOfCells()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedCell") else {
             fatalError("couldn't deque FeedCell")
         }
-        cell.textLabel?.text = "Item \(indexPath.row)"
+        cell.textLabel?.text = viewModel.valueForCell(indexPath: indexPath)
         return cell
     }
     
@@ -40,8 +40,8 @@ extension FeedViewController: UITableViewDataSource {
 extension FeedViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SessionSummaryViewController")
-        vc.title = "Item \(indexPath.row)"
-        self.navigationController?.pushViewController(vc, animated: true)
+        if let vc = viewModel.viewController(indexPath: indexPath) {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
