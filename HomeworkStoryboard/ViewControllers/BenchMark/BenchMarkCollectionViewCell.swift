@@ -16,8 +16,6 @@ import MyHomeWorkUIKit
     
     private var canRefreshChart = true
     
-    var isPaused = false
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         pieChartView.animated = false

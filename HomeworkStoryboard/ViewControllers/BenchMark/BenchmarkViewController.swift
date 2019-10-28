@@ -67,7 +67,7 @@ class BenchmarkViewController: UIViewController, RunTimerProtocol {
     @IBAction func refreshCharts(_ sender: Any) {
         for cell in collectionView.visibleCells {
             guard let benchmarkCell = cell as? BenchMarkCollectionViewCell,
-            let index = collectionView.indexPath(for: benchmarkCell) else {
+                let _ = collectionView.indexPath(for: benchmarkCell) else {
                 return
             }
             

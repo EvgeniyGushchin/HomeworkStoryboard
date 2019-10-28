@@ -18,7 +18,6 @@
 		651B84F323163E3900FF6119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651B84F123163E3900FF6119 /* Main.storyboard */; };
 		651B84F523163E3A00FF6119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651B84F423163E3A00FF6119 /* Assets.xcassets */; };
 		651B84F823163E3A00FF6119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651B84F623163E3A00FF6119 /* LaunchScreen.storyboard */; };
-		651B8501231648E100FF6119 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B8500231648E000FF6119 /* RoundedButton.swift */; };
 		651B850423164F4000FF6119 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651B850223164F4000FF6119 /* Detail.storyboard */; };
 		651B85062316502300FF6119 /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B85052316502300FF6119 /* UserCard.swift */; };
 		651B85092316504400FF6119 /* UserCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651B85082316504400FF6119 /* UserCard.xib */; };
@@ -49,7 +48,6 @@
 		651B84F423163E3A00FF6119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		651B84F723163E3A00FF6119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		651B84F923163E3A00FF6119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		651B8500231648E000FF6119 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		651B850323164F4000FF6119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HomeworkStoryboard/Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
 		651B85052316502300FF6119 /* UserCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserCard.swift; path = ../UserCard.swift; sourceTree = "<group>"; };
 		651B85082316504400FF6119 /* UserCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCard.xib; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 		651B84FF231648B900FF6119 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				651B8500231648E000FF6119 /* RoundedButton.swift */,
 				651B85072316503100FF6119 /* UserCard */,
 			);
 			path = CustomViews;
@@ -306,7 +303,6 @@
 				65658586232D554000E6547D /* BenchMarkViewModel.swift in Sources */,
 				656BF49F2323FF1500B6DCA3 /* TabController.swift in Sources */,
 				65144309232CBEA300931300 /* FeedViewController.swift in Sources */,
-				651B8501231648E100FF6119 /* RoundedButton.swift in Sources */,
 				65159E1B2318D64000B5E514 /* NibLoadable.swift in Sources */,
 				651B85062316502300FF6119 /* UserCard.swift in Sources */,
 				65144312232CC4A900931300 /* BenchMarkCollectionViewCell.swift in Sources */,
