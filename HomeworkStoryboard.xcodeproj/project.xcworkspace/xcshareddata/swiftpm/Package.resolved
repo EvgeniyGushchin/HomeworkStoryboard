@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MyHomeWorkUIKit",
+        "repositoryURL": "git@github.com:EvgeniyGushchin/MyHomeWorkUIKit.git",
+        "state": {
+          "branch": "master",
+          "revision": "b7d6c43126c4676c1257f7bc360c7843cf4d16cc",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

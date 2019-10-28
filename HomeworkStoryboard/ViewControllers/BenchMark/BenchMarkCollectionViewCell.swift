@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MyHomeWorkUIKit
 
 @IBDesignable class BenchMarkCollectionViewCell: UICollectionViewCell {
 

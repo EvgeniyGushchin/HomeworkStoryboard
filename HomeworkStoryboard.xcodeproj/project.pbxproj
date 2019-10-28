@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,11 +22,6 @@
 		651B850423164F4000FF6119 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651B850223164F4000FF6119 /* Detail.storyboard */; };
 		651B85062316502300FF6119 /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B85052316502300FF6119 /* UserCard.swift */; };
 		651B85092316504400FF6119 /* UserCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651B85082316504400FF6119 /* UserCard.xib */; };
-		654AE86F233A4C5700B9C3DE /* CATransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654AE86C233A4C5700B9C3DE /* CATransaction.swift */; };
-		654AE870233A4C5700B9C3DE /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654AE86D233A4C5700B9C3DE /* CGRect.swift */; };
-		654AE871233A4C5700B9C3DE /* CGpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654AE86E233A4C5700B9C3DE /* CGpoint.swift */; };
-		654AE875233A4CA200B9C3DE /* SegmentLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654AE873233A4CA200B9C3DE /* SegmentLayer.swift */; };
-		654AE876233A4CA200B9C3DE /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654AE874233A4CA200B9C3DE /* PieChartView.swift */; };
 		65658586232D554000E6547D /* BenchMarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65658585232D554000E6547D /* BenchMarkViewModel.swift */; };
 		6565858A232D5E0C00E6547D /* SomeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65658589232D5E0C00E6547D /* SomeLayout.swift */; };
 		6565858C232D63D800E6547D /* ListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6565858B232D63D800E6547D /* ListLayout.swift */; };
@@ -37,6 +32,7 @@
 		656BF49F2323FF1500B6DCA3 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF49E2323FF1500B6DCA3 /* TabController.swift */; };
 		656BF4A12324051E00B6DCA3 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4A02324051E00B6DCA3 /* UIApplication.swift */; };
 		656BF4A3232407FE00B6DCA3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4A2232407FE00B6DCA3 /* ThirdViewController.swift */; };
+		65EC439123659A2B006DC134 /* MyHomeWorkUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 65EC439023659A2B006DC134 /* MyHomeWorkUIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,11 +53,7 @@
 		651B850323164F4000FF6119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HomeworkStoryboard/Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
 		651B85052316502300FF6119 /* UserCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserCard.swift; path = ../UserCard.swift; sourceTree = "<group>"; };
 		651B85082316504400FF6119 /* UserCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCard.xib; sourceTree = "<group>"; };
-		654AE86C233A4C5700B9C3DE /* CATransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATransaction.swift; sourceTree = "<group>"; };
-		654AE86D233A4C5700B9C3DE /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
-		654AE86E233A4C5700B9C3DE /* CGpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGpoint.swift; sourceTree = "<group>"; };
-		654AE873233A4CA200B9C3DE /* SegmentLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentLayer.swift; sourceTree = "<group>"; };
-		654AE874233A4CA200B9C3DE /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		6564A4D52366EA7900540CB3 /* MyHomeWorkUIKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyHomeWorkUIKit; path = ../../../MyHomeWorkUIKit; sourceTree = "<group>"; };
 		65658585232D554000E6547D /* BenchMarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchMarkViewModel.swift; sourceTree = "<group>"; };
 		65658589232D5E0C00E6547D /* SomeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeLayout.swift; sourceTree = "<group>"; };
 		6565858B232D63D800E6547D /* ListLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLayout.swift; sourceTree = "<group>"; };
@@ -79,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EC439123659A2B006DC134 /* MyHomeWorkUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,9 +111,6 @@
 				65159E172318D49100B5E514 /* UIView.swift */,
 				656BF49E2323FF1500B6DCA3 /* TabController.swift */,
 				656BF4A02324051E00B6DCA3 /* UIApplication.swift */,
-				654AE86C233A4C5700B9C3DE /* CATransaction.swift */,
-				654AE86D233A4C5700B9C3DE /* CGRect.swift */,
-				654AE86E233A4C5700B9C3DE /* CGpoint.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -152,6 +142,7 @@
 		651B84EC23163E3900FF6119 /* HomeworkStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				6564A4D52366EA7900540CB3 /* MyHomeWorkUIKit */,
 				656BF4952323E78B00B6DCA3 /* Utils */,
 				65159E192318D62200B5E514 /* Protocols */,
 				65159E162318D47F00B5E514 /* Extensions */,
@@ -170,7 +161,6 @@
 		651B84FF231648B900FF6119 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				654AE872233A4C6900B9C3DE /* PieChart */,
 				651B8500231648E000FF6119 /* RoundedButton.swift */,
 				651B85072316503100FF6119 /* UserCard */,
 			);
@@ -184,15 +174,6 @@
 				651B85082316504400FF6119 /* UserCard.xib */,
 			);
 			path = UserCard;
-			sourceTree = "<group>";
-		};
-		654AE872233A4C6900B9C3DE /* PieChart */ = {
-			isa = PBXGroup;
-			children = (
-				654AE874233A4CA200B9C3DE /* PieChartView.swift */,
-				654AE873233A4CA200B9C3DE /* SegmentLayer.swift */,
-			);
-			path = PieChart;
 			sourceTree = "<group>";
 		};
 		65658588232D5DFB00E6547D /* Layouts */ = {
@@ -251,6 +232,9 @@
 			dependencies = (
 			);
 			name = HomeworkStoryboard;
+			packageProductDependencies = (
+				65EC439023659A2B006DC134 /* MyHomeWorkUIKit */,
+			);
 			productName = HomeworkStoryboard;
 			productReference = 651B84EA23163E3900FF6119 /* HomeworkStoryboard.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +263,9 @@
 				Base,
 			);
 			mainGroup = 651B84E123163E3900FF6119;
+			packageReferences = (
+				65EC438F23659A2B006DC134 /* XCRemoteSwiftPackageReference "MyHomeWorkUIKit" */,
+			);
 			productRefGroup = 651B84EB23163E3900FF6119 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -309,23 +296,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				654AE876233A4CA200B9C3DE /* PieChartView.swift in Sources */,
 				656BF4A12324051E00B6DCA3 /* UIApplication.swift in Sources */,
 				65159E182318D49100B5E514 /* UIView.swift in Sources */,
 				656BF49B2323EC5A00B6DCA3 /* BenchmarkViewController.swift in Sources */,
 				651B84F023163E3900FF6119 /* ProfileViewController.swift in Sources */,
-				654AE871233A4C5700B9C3DE /* CGpoint.swift in Sources */,
-				654AE86F233A4C5700B9C3DE /* CATransaction.swift in Sources */,
 				656BF49D2323F5F500B6DCA3 /* NightModeBehavior.swift in Sources */,
 				6565858A232D5E0C00E6547D /* SomeLayout.swift in Sources */,
 				6565858C232D63D800E6547D /* ListLayout.swift in Sources */,
 				65658586232D554000E6547D /* BenchMarkViewModel.swift in Sources */,
 				656BF49F2323FF1500B6DCA3 /* TabController.swift in Sources */,
 				65144309232CBEA300931300 /* FeedViewController.swift in Sources */,
-				654AE875233A4CA200B9C3DE /* SegmentLayer.swift in Sources */,
 				651B8501231648E100FF6119 /* RoundedButton.swift in Sources */,
 				65159E1B2318D64000B5E514 /* NibLoadable.swift in Sources */,
-				654AE870233A4C5700B9C3DE /* CGRect.swift in Sources */,
 				651B85062316502300FF6119 /* UserCard.swift in Sources */,
 				65144312232CC4A900931300 /* BenchMarkCollectionViewCell.swift in Sources */,
 				651B84EE23163E3900FF6119 /* AppDelegate.swift in Sources */,
@@ -540,6 +522,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65EC438F23659A2B006DC134 /* XCRemoteSwiftPackageReference "MyHomeWorkUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:EvgeniyGushchin/MyHomeWorkUIKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65EC439023659A2B006DC134 /* MyHomeWorkUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65EC438F23659A2B006DC134 /* XCRemoteSwiftPackageReference "MyHomeWorkUIKit" */;
+			productName = MyHomeWorkUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 651B84E223163E3900FF6119 /* Project object */;
 }
