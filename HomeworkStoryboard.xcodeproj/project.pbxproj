@@ -31,6 +31,8 @@
 		656BF49F2323FF1500B6DCA3 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF49E2323FF1500B6DCA3 /* TabController.swift */; };
 		656BF4A12324051E00B6DCA3 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4A02324051E00B6DCA3 /* UIApplication.swift */; };
 		656BF4A3232407FE00B6DCA3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4A2232407FE00B6DCA3 /* ThirdViewController.swift */; };
+		65B73DF92366F900007A5C6C /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B73DF82366F900007A5C6C /* FeedViewModel.swift */; };
+		65B73DFB2366F924007A5C6C /* FeedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B73DFA2366F924007A5C6C /* FeedDataSource.swift */; };
 		65EC439123659A2B006DC134 /* MyHomeWorkUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 65EC439023659A2B006DC134 /* MyHomeWorkUIKit */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		656BF49E2323FF1500B6DCA3 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		656BF4A02324051E00B6DCA3 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		656BF4A2232407FE00B6DCA3 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		65B73DF82366F900007A5C6C /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		65B73DFA2366F924007A5C6C /* FeedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				65144308232CBEA300931300 /* FeedViewController.swift */,
+				65B73DF82366F900007A5C6C /* FeedViewModel.swift */,
+				65B73DFA2366F924007A5C6C /* FeedDataSource.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -293,7 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B73DF92366F900007A5C6C /* FeedViewModel.swift in Sources */,
 				656BF4A12324051E00B6DCA3 /* UIApplication.swift in Sources */,
+				65B73DFB2366F924007A5C6C /* FeedDataSource.swift in Sources */,
 				65159E182318D49100B5E514 /* UIView.swift in Sources */,
 				656BF49B2323EC5A00B6DCA3 /* BenchmarkViewController.swift in Sources */,
 				651B84F023163E3900FF6119 /* ProfileViewController.swift in Sources */,
