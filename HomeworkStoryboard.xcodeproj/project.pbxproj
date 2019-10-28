@@ -33,7 +33,6 @@
 		656BF4A3232407FE00B6DCA3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF4A2232407FE00B6DCA3 /* ThirdViewController.swift */; };
 		65B73DF92366F900007A5C6C /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B73DF82366F900007A5C6C /* FeedViewModel.swift */; };
 		65B73DFB2366F924007A5C6C /* FeedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B73DFA2366F924007A5C6C /* FeedDataSource.swift */; };
-		65EC439123659A2B006DC134 /* MyHomeWorkUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 65EC439023659A2B006DC134 /* MyHomeWorkUIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65EC439123659A2B006DC134 /* MyHomeWorkUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +130,7 @@
 			children = (
 				651B84EC23163E3900FF6119 /* HomeworkStoryboard */,
 				651B84EB23163E3900FF6119 /* Products */,
+				65B73E0123674940007A5C6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,6 +218,13 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		65B73E0123674940007A5C6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,10 +239,10 @@
 			buildRules = (
 			);
 			dependencies = (
+				65B73E0723674C17007A5C6C /* PBXTargetDependency */,
 			);
 			name = HomeworkStoryboard;
 			packageProductDependencies = (
-				65EC439023659A2B006DC134 /* MyHomeWorkUIKit */,
 			);
 			productName = HomeworkStoryboard;
 			productReference = 651B84EA23163E3900FF6119 /* HomeworkStoryboard.app */;
@@ -323,6 +329,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65B73E0723674C17007A5C6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 65B73E0623674C17007A5C6C /* MyHomeWorkUIKit */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		651B84F123163E3900FF6119 /* Main.storyboard */ = {
@@ -539,7 +552,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		65EC439023659A2B006DC134 /* MyHomeWorkUIKit */ = {
+		65B73E0623674C17007A5C6C /* MyHomeWorkUIKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 65EC438F23659A2B006DC134 /* XCRemoteSwiftPackageReference "MyHomeWorkUIKit" */;
 			productName = MyHomeWorkUIKit;
