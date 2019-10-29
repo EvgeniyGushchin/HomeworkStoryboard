@@ -161,11 +161,18 @@
                         <viewLayoutGuide key="safeArea" id="Scx-ac-Giz"/>
                     </view>
                     <navigationItem key="navigationItem" id="eaS-8h-2Vc">
-                        <barButtonItem key="rightBarButtonItem" title="Toggle" id="ErP-G3-Vxq">
-                            <connections>
-                                <action selector="toggleLayout:" destination="s1S-5v-Ird" id="LXY-bk-MTJ"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Toggle" id="ErP-G3-Vxq">
+                                <connections>
+                                    <action selector="toggleLayout:" destination="s1S-5v-Ird" id="LXY-bk-MTJ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Refresh" id="id1-DG-9QS">
+                                <connections>
+                                    <action selector="refreshCharts:" destination="s1S-5v-Ird" id="aH2-SK-4Au"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="Yzd-II-nKh" id="hFr-FH-crl"/>

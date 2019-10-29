@@ -63,6 +63,17 @@ class BenchmarkViewController: UIViewController, RunTimerProtocol {
             collectionView.setCollectionViewLayout(listLayout, animated: true)
         }
     }
+    
+    @IBAction func refreshCharts(_ sender: Any) {
+        for cell in collectionView.visibleCells {
+            guard let benchmarkCell = cell as? BenchMarkCollectionViewCell,
+            let index = collectionView.indexPath(for: benchmarkCell) else {
+                return
+            }
+            
+            benchmarkCell.refreshPieChart()
+        }
+    }
 }
 
 extension BenchmarkViewController: UICollectionViewDataSource {
@@ -73,10 +84,14 @@ extension BenchmarkViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIDentifier, for: indexPath)
             as? BenchMarkCollectionViewCell else { return UICollectionViewCell() }
-        cell.populateWith(viewModel: viewModel.viewModelForCell(indexPath: indexPath))
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if let cell = cell as? BenchMarkCollectionViewCell {
+            cell.populateWith(viewModel: viewModel.viewModelForCell(indexPath: indexPath))
+        }
+    }
     
 }
 

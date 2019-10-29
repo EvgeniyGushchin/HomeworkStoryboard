@@ -6,7 +6,7 @@
 //  Copyright © 2019 EG. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct BenchMarkViewModel {
     
@@ -62,6 +62,7 @@ struct BenchMarkViewModel {
 class BenchmarkCellViewModel {
     
     private var timer = 0
+    private var idleTimer = 0
     private var isPaused = false
     
     func timerValue() -> String {
@@ -73,9 +74,10 @@ class BenchmarkCellViewModel {
     
     func tickTimer() {
         if isPaused {
-            return
+            idleTimer += 1
+        } else {
+            timer += 1
         }
-        timer += 1
     }
     
     func resetTimer() {
@@ -84,5 +86,22 @@ class BenchmarkCellViewModel {
     
     func toggleTimer() {
         isPaused = !isPaused
+    }
+    
+    func chartSegments() -> [Segment] {
+        if timer == 0 && idleTimer == 0 {
+            return [Segment(color: .red, value: 1, title: "100%")]
+        }
+        
+        let time  = CGFloat(timer)
+        let idle  = CGFloat(idleTimer)
+        
+        var segments = [
+            Segment(color: .red, value: time, title: "\(Int(time/(time + idle) * 100))%")
+        ]
+        if idle > 0 {
+            segments.append(Segment(color: .blue, value: idle, title: "\(Int(idle/(time + idle) * 100))%"))
+        }
+        return segments
     }
 }
