@@ -12,10 +12,7 @@ struct FeedDataProvider {
     
     func feedMockData() -> [FeedData] {
         return [
-            FeedData(name: "Array"),
-            FeedData(name: "Set"),
-            FeedData(name: "Dictionary"),
-            FeedData(name: "SuffixArray")
+            FeedData(name: "Array")
         ]
     }
 }

@@ -23,6 +23,7 @@
 		651B85062316502300FF6119 /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B85052316502300FF6119 /* UserCard.swift */; };
 		651B85092316504400FF6119 /* UserCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651B85082316504400FF6119 /* UserCard.xib */; };
 		65274C1F234AFBDD003598EE /* SuffixSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65274C1E234AFBDD003598EE /* SuffixSequence.swift */; };
+		653B81822383F36F00325F40 /* StringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B81812383F36F00325F40 /* StringGenerator.swift */; };
 		65444A2C23436476006004DA /* AlgoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65444A2B23436476006004DA /* AlgoProvider.swift */; };
 		654AE86F233A4C5700B9C3DE /* CATransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654AE86C233A4C5700B9C3DE /* CATransaction.swift */; };
 		654AE870233A4C5700B9C3DE /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654AE86D233A4C5700B9C3DE /* CGRect.swift */; };
@@ -42,19 +43,11 @@
 		65EE6C8E234B2E3F00F99BF7 /* FeedDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6C8C234B2E3E00F99BF7 /* FeedDataProvider.swift */; };
 		65EE6C8F234B2E3F00F99BF7 /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6C8D234B2E3E00F99BF7 /* FeedData.swift */; };
 		65EE6C91234B2E9600F99BF7 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6C90234B2E9600F99BF7 /* FeedViewModel.swift */; };
-		65EE6C94234B305E00F99BF7 /* SuffixArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6C93234B305E00F99BF7 /* SuffixArrayViewController.swift */; };
 		65EE6C9C234B30F300F99BF7 /* Profiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6C9B234B30F300F99BF7 /* Profiler.swift */; };
 		65EE6CA2234B313300F99BF7 /* ArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6C9E234B313300F99BF7 /* ArrayViewController.swift */; };
-		65EE6CA3234B313300F99BF7 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6C9F234B313300F99BF7 /* DictionaryViewController.swift */; };
-		65EE6CA4234B313300F99BF7 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CA0234B313300F99BF7 /* SetViewController.swift */; };
 		65EE6CA5234B313300F99BF7 /* DataStructuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CA1234B313300F99BF7 /* DataStructuresViewController.swift */; };
 		65EE6CB2234B315F00F99BF7 /* ArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CA9234B315F00F99BF7 /* ArrayManipulator.swift */; };
 		65EE6CB3234B315F00F99BF7 /* SwiftArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CAA234B315F00F99BF7 /* SwiftArrayManipulator.swift */; };
-		65EE6CB4234B315F00F99BF7 /* StringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CAB234B315F00F99BF7 /* StringGenerator.swift */; };
-		65EE6CB5234B315F00F99BF7 /* SwiftDictionaryManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CAD234B315F00F99BF7 /* SwiftDictionaryManipulator.swift */; };
-		65EE6CB6234B315F00F99BF7 /* DictionaryManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CAE234B315F00F99BF7 /* DictionaryManipulator.swift */; };
-		65EE6CB7234B315F00F99BF7 /* SwiftSetManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CB0234B315F00F99BF7 /* SwiftSetManipulator.swift */; };
-		65EE6CB8234B315F00F99BF7 /* SetManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CB1234B315F00F99BF7 /* SetManipulator.swift */; };
 		65EE6CBA234B31C300F99BF7 /* DataStructures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EE6CB9234B31C300F99BF7 /* DataStructures.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +70,7 @@
 		651B85052316502300FF6119 /* UserCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserCard.swift; path = ../UserCard.swift; sourceTree = "<group>"; };
 		651B85082316504400FF6119 /* UserCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCard.xib; sourceTree = "<group>"; };
 		65274C1E234AFBDD003598EE /* SuffixSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixSequence.swift; sourceTree = "<group>"; };
+		653B81812383F36F00325F40 /* StringGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringGenerator.swift; sourceTree = "<group>"; };
 		65444A2B23436476006004DA /* AlgoProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgoProvider.swift; sourceTree = "<group>"; };
 		654AE86C233A4C5700B9C3DE /* CATransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATransaction.swift; sourceTree = "<group>"; };
 		654AE86D233A4C5700B9C3DE /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
@@ -96,19 +90,11 @@
 		65EE6C8C234B2E3E00F99BF7 /* FeedDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDataProvider.swift; sourceTree = "<group>"; };
 		65EE6C8D234B2E3E00F99BF7 /* FeedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedData.swift; sourceTree = "<group>"; };
 		65EE6C90234B2E9600F99BF7 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
-		65EE6C93234B305E00F99BF7 /* SuffixArrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuffixArrayViewController.swift; sourceTree = "<group>"; };
 		65EE6C9B234B30F300F99BF7 /* Profiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profiler.swift; sourceTree = "<group>"; };
 		65EE6C9E234B313300F99BF7 /* ArrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayViewController.swift; sourceTree = "<group>"; };
-		65EE6C9F234B313300F99BF7 /* DictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
-		65EE6CA0234B313300F99BF7 /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
 		65EE6CA1234B313300F99BF7 /* DataStructuresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructuresViewController.swift; sourceTree = "<group>"; };
 		65EE6CA9234B315F00F99BF7 /* ArrayManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayManipulator.swift; sourceTree = "<group>"; };
 		65EE6CAA234B315F00F99BF7 /* SwiftArrayManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftArrayManipulator.swift; sourceTree = "<group>"; };
-		65EE6CAB234B315F00F99BF7 /* StringGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringGenerator.swift; sourceTree = "<group>"; };
-		65EE6CAD234B315F00F99BF7 /* SwiftDictionaryManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictionaryManipulator.swift; sourceTree = "<group>"; };
-		65EE6CAE234B315F00F99BF7 /* DictionaryManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryManipulator.swift; sourceTree = "<group>"; };
-		65EE6CB0234B315F00F99BF7 /* SwiftSetManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSetManipulator.swift; sourceTree = "<group>"; };
-		65EE6CB1234B315F00F99BF7 /* SetManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetManipulator.swift; sourceTree = "<group>"; };
 		65EE6CB9234B31C300F99BF7 /* DataStructures.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DataStructures.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -305,21 +291,10 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		65EE6C92234B304B00F99BF7 /* SuffixArray */ = {
-			isa = PBXGroup;
-			children = (
-				65EE6C93234B305E00F99BF7 /* SuffixArrayViewController.swift */,
-			);
-			path = SuffixArray;
-			sourceTree = "<group>";
-		};
 		65EE6C9D234B313300F99BF7 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				65EE6C92234B304B00F99BF7 /* SuffixArray */,
 				65EE6C9E234B313300F99BF7 /* ArrayViewController.swift */,
-				65EE6C9F234B313300F99BF7 /* DictionaryViewController.swift */,
-				65EE6CA0234B313300F99BF7 /* SetViewController.swift */,
 				65EE6CA1234B313300F99BF7 /* DataStructuresViewController.swift */,
 			);
 			path = DataStructures;
@@ -330,6 +305,7 @@
 			children = (
 				65EE6CA7234B315F00F99BF7 /* DataStructures */,
 				65EE6C9B234B30F300F99BF7 /* Profiler.swift */,
+				653B81812383F36F00325F40 /* StringGenerator.swift */,
 			);
 			path = Profiler;
 			sourceTree = "<group>";
@@ -338,9 +314,6 @@
 			isa = PBXGroup;
 			children = (
 				65EE6CA8234B315F00F99BF7 /* Array */,
-				65EE6CAB234B315F00F99BF7 /* StringGenerator.swift */,
-				65EE6CAC234B315F00F99BF7 /* Dictionary */,
-				65EE6CAF234B315F00F99BF7 /* Set */,
 			);
 			name = DataStructures;
 			path = ../../../../../../../Downloads/DataStructuresProfiling/DataStructuresProfiling/Modules/Feed/Profiler/DataStructures;
@@ -353,24 +326,6 @@
 				65EE6CAA234B315F00F99BF7 /* SwiftArrayManipulator.swift */,
 			);
 			path = Array;
-			sourceTree = "<group>";
-		};
-		65EE6CAC234B315F00F99BF7 /* Dictionary */ = {
-			isa = PBXGroup;
-			children = (
-				65EE6CAD234B315F00F99BF7 /* SwiftDictionaryManipulator.swift */,
-				65EE6CAE234B315F00F99BF7 /* DictionaryManipulator.swift */,
-			);
-			path = Dictionary;
-			sourceTree = "<group>";
-		};
-		65EE6CAF234B315F00F99BF7 /* Set */ = {
-			isa = PBXGroup;
-			children = (
-				65EE6CB0234B315F00F99BF7 /* SwiftSetManipulator.swift */,
-				65EE6CB1234B315F00F99BF7 /* SetManipulator.swift */,
-			);
-			path = Set;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,24 +404,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				654AE876233A4CA200B9C3DE /* PieChartView.swift in Sources */,
-				65EE6CA4234B313300F99BF7 /* SetViewController.swift in Sources */,
 				656BF4A12324051E00B6DCA3 /* UIApplication.swift in Sources */,
 				65EE6CA5234B313300F99BF7 /* DataStructuresViewController.swift in Sources */,
 				65159E182318D49100B5E514 /* UIView.swift in Sources */,
 				65EE6C8F234B2E3F00F99BF7 /* FeedData.swift in Sources */,
 				656BF49B2323EC5A00B6DCA3 /* BenchmarkViewController.swift in Sources */,
-				65EE6CB8234B315F00F99BF7 /* SetManipulator.swift in Sources */,
-				65EE6CA3234B313300F99BF7 /* DictionaryViewController.swift in Sources */,
 				65444A2C23436476006004DA /* AlgoProvider.swift in Sources */,
 				651B84F023163E3900FF6119 /* ProfileViewController.swift in Sources */,
-				65EE6CB6234B315F00F99BF7 /* DictionaryManipulator.swift in Sources */,
-				65EE6CB5234B315F00F99BF7 /* SwiftDictionaryManipulator.swift in Sources */,
 				654AE871233A4C5700B9C3DE /* CGpoint.swift in Sources */,
 				654AE86F233A4C5700B9C3DE /* CATransaction.swift in Sources */,
 				656BF49D2323F5F500B6DCA3 /* NightModeBehavior.swift in Sources */,
 				65EE6CB3234B315F00F99BF7 /* SwiftArrayManipulator.swift in Sources */,
 				65EE6CA2234B313300F99BF7 /* ArrayViewController.swift in Sources */,
 				6565858A232D5E0C00E6547D /* SomeLayout.swift in Sources */,
+				653B81822383F36F00325F40 /* StringGenerator.swift in Sources */,
 				6565858C232D63D800E6547D /* ListLayout.swift in Sources */,
 				65658586232D554000E6547D /* BenchMarkViewModel.swift in Sources */,
 				656BF49F2323FF1500B6DCA3 /* TabController.swift in Sources */,
@@ -476,14 +427,11 @@
 				651B8501231648E100FF6119 /* RoundedButton.swift in Sources */,
 				65159E1B2318D64000B5E514 /* NibLoadable.swift in Sources */,
 				65274C1F234AFBDD003598EE /* SuffixSequence.swift in Sources */,
-				65EE6C94234B305E00F99BF7 /* SuffixArrayViewController.swift in Sources */,
 				654AE870233A4C5700B9C3DE /* CGRect.swift in Sources */,
 				65EE6C8E234B2E3F00F99BF7 /* FeedDataProvider.swift in Sources */,
 				651B85062316502300FF6119 /* UserCard.swift in Sources */,
-				65EE6CB4234B315F00F99BF7 /* StringGenerator.swift in Sources */,
 				65144312232CC4A900931300 /* BenchMarkCollectionViewCell.swift in Sources */,
 				651B84EE23163E3900FF6119 /* AppDelegate.swift in Sources */,
-				65EE6CB7234B315F00F99BF7 /* SwiftSetManipulator.swift in Sources */,
 				65EE6C9C234B30F300F99BF7 /* Profiler.swift in Sources */,
 				656BF4942323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift in Sources */,
 				6514430E232CC12400931300 /* SessionSummaryViewController.swift in Sources */,

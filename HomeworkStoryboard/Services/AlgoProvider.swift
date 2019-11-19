@@ -13,6 +13,11 @@ struct Algo {
     //var color
 }
 
+struct AlgoSuffix: Equatable {
+    var suffix: String
+    var algoName: String
+}
+
 struct AlgoProvider {
     
     var all: [String] {
@@ -71,8 +76,14 @@ struct AlgoProvider {
         ]
     }
     
-    var allSuffixSequences: [SuffixSequence] {
-        return all.map { SuffixSequence(string: $0) }
+    var allSuffixSequences: [AlgoSuffix] {
+        return all.reduce(into: [AlgoSuffix]()) { (suffixes, algoName) in
+            for suffix in SuffixSequence(string: algoName) {
+                suffixes.append(AlgoSuffix(suffix: String(suffix.lowercased()), algoName: algoName))
+            }
+        }.sorted { (algoSuffix1, algoSuffix2) -> Bool in
+            return algoSuffix1.suffix < algoSuffix2.suffix
+        }
     }
     
     
