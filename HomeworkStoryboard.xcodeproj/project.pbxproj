@@ -47,7 +47,7 @@
 		65EE6CA2234B313300F99BF7 /* ArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6C9E234B313300F99BF7 /* ArrayViewController.swift */; };
 		65EE6CA5234B313300F99BF7 /* DataStructuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CA1234B313300F99BF7 /* DataStructuresViewController.swift */; };
 		65EE6CB2234B315F00F99BF7 /* ArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CA9234B315F00F99BF7 /* ArrayManipulator.swift */; };
-		65EE6CB3234B315F00F99BF7 /* SwiftArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CAA234B315F00F99BF7 /* SwiftArrayManipulator.swift */; };
+		65EE6CB3234B315F00F99BF7 /* SuffixArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CAA234B315F00F99BF7 /* SuffixArrayManipulator.swift */; };
 		65EE6CBA234B31C300F99BF7 /* DataStructures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EE6CB9234B31C300F99BF7 /* DataStructures.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -94,7 +94,7 @@
 		65EE6C9E234B313300F99BF7 /* ArrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayViewController.swift; sourceTree = "<group>"; };
 		65EE6CA1234B313300F99BF7 /* DataStructuresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructuresViewController.swift; sourceTree = "<group>"; };
 		65EE6CA9234B315F00F99BF7 /* ArrayManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayManipulator.swift; sourceTree = "<group>"; };
-		65EE6CAA234B315F00F99BF7 /* SwiftArrayManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftArrayManipulator.swift; sourceTree = "<group>"; };
+		65EE6CAA234B315F00F99BF7 /* SuffixArrayManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuffixArrayManipulator.swift; sourceTree = "<group>"; };
 		65EE6CB9234B31C300F99BF7 /* DataStructures.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DataStructures.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -323,7 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				65EE6CA9234B315F00F99BF7 /* ArrayManipulator.swift */,
-				65EE6CAA234B315F00F99BF7 /* SwiftArrayManipulator.swift */,
+				65EE6CAA234B315F00F99BF7 /* SuffixArrayManipulator.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -414,7 +414,7 @@
 				654AE871233A4C5700B9C3DE /* CGpoint.swift in Sources */,
 				654AE86F233A4C5700B9C3DE /* CATransaction.swift in Sources */,
 				656BF49D2323F5F500B6DCA3 /* NightModeBehavior.swift in Sources */,
-				65EE6CB3234B315F00F99BF7 /* SwiftArrayManipulator.swift in Sources */,
+				65EE6CB3234B315F00F99BF7 /* SuffixArrayManipulator.swift in Sources */,
 				65EE6CA2234B313300F99BF7 /* ArrayViewController.swift in Sources */,
 				6565858A232D5E0C00E6547D /* SomeLayout.swift in Sources */,
 				653B81822383F36F00325F40 /* StringGenerator.swift in Sources */,

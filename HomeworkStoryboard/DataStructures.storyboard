@@ -31,8 +31,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YC0-h0-xWS">
+                                <rect key="frame" x="20" y="126.5" width="374" height="55.5"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="10000" translatesAutoresizingMaskIntoConstraints="NO" id="deS-hp-hC7">
+                                        <rect key="frame" x="-2" y="0.0" width="378" height="31"/>
+                                        <connections>
+                                            <action selector="searchCountChanged:" destination="PgN-qi-0zJ" eventType="valueChanged" id="KNq-UE-570"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Char sequence search Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkk-81-Cay">
+                                        <rect key="frame" x="76" y="35" width="222.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="deS-hp-hC7" firstAttribute="width" secondItem="YC0-h0-xWS" secondAttribute="width" id="glY-kn-CEo"/>
+                                </constraints>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9e-oE-lf4">
-                                <rect key="frame" x="152" y="126.5" width="110" height="30"/>
+                                <rect key="frame" x="152" y="198" width="110" height="30"/>
                                 <state key="normal" title="Create And Test">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -41,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDN-hZ-gTw">
-                                <rect key="frame" x="174.5" y="160.5" width="65" height="30"/>
+                                <rect key="frame" x="174.5" y="232" width="65" height="30"/>
                                 <state key="normal" title="Test Only">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -50,13 +70,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result Times" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGa-2Y-Idq">
-                                <rect key="frame" x="154.5" y="198.5" width="105.5" height="20.5"/>
+                                <rect key="frame" x="154.5" y="270" width="105.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GcH-FY-Y0p">
-                                <rect key="frame" x="0.0" y="227" width="414" height="635"/>
+                                <rect key="frame" x="0.0" y="298.5" width="414" height="563.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="PgN-qi-0zJ" id="YDa-mB-OUA"/>
@@ -70,18 +90,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="YC0-h0-xWS" firstAttribute="leading" secondItem="MxF-W7-XzU" secondAttribute="leading" id="1md-Et-BWi"/>
                             <constraint firstAttribute="centerX" secondItem="TGa-2Y-Idq" secondAttribute="centerX" id="1yd-fO-KCs"/>
                             <constraint firstAttribute="centerX" secondItem="OE7-vy-vlF" secondAttribute="centerX" id="2Q1-aB-nKb"/>
                             <constraint firstItem="OE7-vy-vlF" firstAttribute="top" secondItem="MxF-W7-XzU" secondAttribute="bottom" constant="8" id="6U6-8I-L1D"/>
+                            <constraint firstItem="YC0-h0-xWS" firstAttribute="trailing" secondItem="MxF-W7-XzU" secondAttribute="trailing" id="7DD-5N-cbf"/>
                             <constraint firstAttribute="trailing" secondItem="GcH-FY-Y0p" secondAttribute="trailing" id="7GK-J7-bpU"/>
                             <constraint firstAttribute="centerX" secondItem="DdI-gT-Sst" secondAttribute="centerX" id="9Yj-6K-oB9"/>
                             <constraint firstItem="TGa-2Y-Idq" firstAttribute="top" secondItem="CDN-hZ-gTw" secondAttribute="bottom" constant="8" id="Cx0-ej-tVF"/>
+                            <constraint firstItem="S9e-oE-lf4" firstAttribute="top" secondItem="YC0-h0-xWS" secondAttribute="bottom" constant="16" id="FHU-30-pYa"/>
                             <constraint firstAttribute="centerY" secondItem="DdI-gT-Sst" secondAttribute="centerY" id="Hd0-oK-17z"/>
-                            <constraint firstItem="S9e-oE-lf4" firstAttribute="top" secondItem="OE7-vy-vlF" secondAttribute="bottom" constant="16" id="KMV-Pd-AlM"/>
                             <constraint firstItem="MxF-W7-XzU" firstAttribute="top" secondItem="8it-Hx-CDS" secondAttribute="bottom" constant="8" id="Lym-MY-Dx8"/>
                             <constraint firstAttribute="centerX" secondItem="S9e-oE-lf4" secondAttribute="centerX" id="bqp-k9-2hO"/>
                             <constraint firstItem="CDN-hZ-gTw" firstAttribute="top" secondItem="S9e-oE-lf4" secondAttribute="bottom" constant="4" id="iXZ-6n-5jR"/>
                             <constraint firstItem="GcH-FY-Y0p" firstAttribute="leading" secondItem="Hq0-nK-iaU" secondAttribute="leading" id="lIv-O8-A5I"/>
+                            <constraint firstItem="YC0-h0-xWS" firstAttribute="top" secondItem="OE7-vy-vlF" secondAttribute="bottom" constant="16" id="nCh-9z-9RV"/>
                             <constraint firstAttribute="trailing" secondItem="MxF-W7-XzU" secondAttribute="trailing" constant="20" id="nQN-zb-5Iw"/>
                             <constraint firstAttribute="centerX" secondItem="CDN-hZ-gTw" secondAttribute="centerX" id="nfP-OI-tCg"/>
                             <constraint firstItem="Gyg-Jw-A00" firstAttribute="top" secondItem="GcH-FY-Y0p" secondAttribute="bottom" id="qn9-Jx-fwk"/>
@@ -93,6 +116,7 @@
                         <outlet property="countLabel" destination="OE7-vy-vlF" id="9en-Dy-WYX"/>
                         <outlet property="createAndTestButton" destination="S9e-oE-lf4" id="JtB-U9-SZK"/>
                         <outlet property="resultsTableView" destination="GcH-FY-Y0p" id="AfR-zR-Dkp"/>
+                        <outlet property="searchCountLabel" destination="Kkk-81-Cay" id="iV3-nZ-34U"/>
                         <outlet property="slider" destination="MxF-W7-XzU" id="wDi-WO-nKG"/>
                         <outlet property="spinner" destination="DdI-gT-Sst" id="va1-4R-fN4"/>
                         <outlet property="testOnlyButton" destination="CDN-hZ-gTw" id="B47-V0-dXd"/>
@@ -100,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZs-ih-07S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1299" y="-1385"/>
+            <point key="canvasLocation" x="-1300" y="-1385.4910714285713"/>
         </scene>
     </scenes>
 </document>

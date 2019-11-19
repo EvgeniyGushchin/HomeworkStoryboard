@@ -30,7 +30,7 @@ class DataStructuresViewController: UIViewController, UITableViewDataSource, UIT
 
   //MARK: Lazy-instantiated variables
 
-  lazy fileprivate var numberFormatter: NumberFormatter = {
+  lazy var numberFormatter: NumberFormatter = {
     var formatter = NumberFormatter()
     formatter.numberStyle = NumberFormatter.Style.decimal
     return formatter
