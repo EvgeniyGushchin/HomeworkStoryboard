@@ -46,9 +46,9 @@
 		65EE6C9C234B30F300F99BF7 /* Profiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6C9B234B30F300F99BF7 /* Profiler.swift */; };
 		65EE6CA2234B313300F99BF7 /* ArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6C9E234B313300F99BF7 /* ArrayViewController.swift */; };
 		65EE6CA5234B313300F99BF7 /* DataStructuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CA1234B313300F99BF7 /* DataStructuresViewController.swift */; };
-		65EE6CB2234B315F00F99BF7 /* ArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CA9234B315F00F99BF7 /* ArrayManipulator.swift */; };
-		65EE6CB3234B315F00F99BF7 /* SuffixArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE6CAA234B315F00F99BF7 /* SuffixArrayManipulator.swift */; };
 		65EE6CBA234B31C300F99BF7 /* DataStructures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EE6CB9234B31C300F99BF7 /* DataStructures.storyboard */; };
+		65F87B36238413A500C1A856 /* ArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F87B34238413A500C1A856 /* ArrayManipulator.swift */; };
+		65F87B37238413A500C1A856 /* SuffixArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F87B35238413A500C1A856 /* SuffixArrayManipulator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,9 +93,9 @@
 		65EE6C9B234B30F300F99BF7 /* Profiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profiler.swift; sourceTree = "<group>"; };
 		65EE6C9E234B313300F99BF7 /* ArrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayViewController.swift; sourceTree = "<group>"; };
 		65EE6CA1234B313300F99BF7 /* DataStructuresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructuresViewController.swift; sourceTree = "<group>"; };
-		65EE6CA9234B315F00F99BF7 /* ArrayManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayManipulator.swift; sourceTree = "<group>"; };
-		65EE6CAA234B315F00F99BF7 /* SuffixArrayManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuffixArrayManipulator.swift; sourceTree = "<group>"; };
 		65EE6CB9234B31C300F99BF7 /* DataStructures.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DataStructures.storyboard; sourceTree = "<group>"; };
+		65F87B34238413A500C1A856 /* ArrayManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayManipulator.swift; sourceTree = "<group>"; };
+		65F87B35238413A500C1A856 /* SuffixArrayManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuffixArrayManipulator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,27 +303,26 @@
 		65EE6CA6234B314300F99BF7 /* Profiler */ = {
 			isa = PBXGroup;
 			children = (
-				65EE6CA7234B315F00F99BF7 /* DataStructures */,
+				65F87B32238413A500C1A856 /* DataStructures */,
 				65EE6C9B234B30F300F99BF7 /* Profiler.swift */,
 				653B81812383F36F00325F40 /* StringGenerator.swift */,
 			);
 			path = Profiler;
 			sourceTree = "<group>";
 		};
-		65EE6CA7234B315F00F99BF7 /* DataStructures */ = {
+		65F87B32238413A500C1A856 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				65EE6CA8234B315F00F99BF7 /* Array */,
+				65F87B33238413A500C1A856 /* Array */,
 			);
-			name = DataStructures;
-			path = ../../../../../../../Downloads/DataStructuresProfiling/DataStructuresProfiling/Modules/Feed/Profiler/DataStructures;
+			path = DataStructures;
 			sourceTree = "<group>";
 		};
-		65EE6CA8234B315F00F99BF7 /* Array */ = {
+		65F87B33238413A500C1A856 /* Array */ = {
 			isa = PBXGroup;
 			children = (
-				65EE6CA9234B315F00F99BF7 /* ArrayManipulator.swift */,
-				65EE6CAA234B315F00F99BF7 /* SuffixArrayManipulator.swift */,
+				65F87B34238413A500C1A856 /* ArrayManipulator.swift */,
+				65F87B35238413A500C1A856 /* SuffixArrayManipulator.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -414,12 +413,12 @@
 				654AE871233A4C5700B9C3DE /* CGpoint.swift in Sources */,
 				654AE86F233A4C5700B9C3DE /* CATransaction.swift in Sources */,
 				656BF49D2323F5F500B6DCA3 /* NightModeBehavior.swift in Sources */,
-				65EE6CB3234B315F00F99BF7 /* SuffixArrayManipulator.swift in Sources */,
 				65EE6CA2234B313300F99BF7 /* ArrayViewController.swift in Sources */,
 				6565858A232D5E0C00E6547D /* SomeLayout.swift in Sources */,
 				653B81822383F36F00325F40 /* StringGenerator.swift in Sources */,
 				6565858C232D63D800E6547D /* ListLayout.swift in Sources */,
 				65658586232D554000E6547D /* BenchMarkViewModel.swift in Sources */,
+				65F87B36238413A500C1A856 /* ArrayManipulator.swift in Sources */,
 				656BF49F2323FF1500B6DCA3 /* TabController.swift in Sources */,
 				65144309232CBEA300931300 /* FeedViewController.swift in Sources */,
 				654AE875233A4CA200B9C3DE /* SegmentLayer.swift in Sources */,
@@ -428,6 +427,7 @@
 				65159E1B2318D64000B5E514 /* NibLoadable.swift in Sources */,
 				65274C1F234AFBDD003598EE /* SuffixSequence.swift in Sources */,
 				654AE870233A4C5700B9C3DE /* CGRect.swift in Sources */,
+				65F87B37238413A500C1A856 /* SuffixArrayManipulator.swift in Sources */,
 				65EE6C8E234B2E3F00F99BF7 /* FeedDataProvider.swift in Sources */,
 				651B85062316502300FF6119 /* UserCard.swift in Sources */,
 				65144312232CC4A900931300 /* BenchMarkCollectionViewCell.swift in Sources */,
@@ -436,7 +436,6 @@
 				656BF4942323E77E00B6DCA3 /* ViewControllerLifecycleBehavior.swift in Sources */,
 				6514430E232CC12400931300 /* SessionSummaryViewController.swift in Sources */,
 				656BF4992323EBDA00B6DCA3 /* RunTimerBehavior.swift in Sources */,
-				65EE6CB2234B315F00F99BF7 /* ArrayManipulator.swift in Sources */,
 				656BF4A3232407FE00B6DCA3 /* ThirdViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
