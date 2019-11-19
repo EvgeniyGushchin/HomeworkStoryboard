@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MyHomeWorkUIKit
 
 @IBDesignable class BenchMarkCollectionViewCell: UICollectionViewCell {
 
@@ -14,8 +15,6 @@ import UIKit
     @IBOutlet weak var pieChartView: PieChartView!
     
     private var canRefreshChart = true
-    
-    var isPaused = false
     
     override func awakeFromNib() {
         super.awakeFromNib()

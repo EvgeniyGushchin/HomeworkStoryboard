@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MyHomeWorkUIKit
 
 struct BenchMarkViewModel {
     
@@ -99,6 +100,7 @@ class BenchmarkCellViewModel {
         var segments = [
             Segment(color: .red, value: time, title: "\(Int(time/(time + idle) * 100))%")
         ]
+
         if idle > 0 {
             segments.append(Segment(color: .blue, value: idle, title: "\(Int(idle/(time + idle) * 100))%"))
         }

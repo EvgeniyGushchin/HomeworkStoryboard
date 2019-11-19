@@ -9,13 +9,11 @@
 import UIKit
 
 class FeedViewController: UIViewController {
-    
-    var viewModel = FeedViewModel()
+
+    let viewModel = FeedViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
 }
