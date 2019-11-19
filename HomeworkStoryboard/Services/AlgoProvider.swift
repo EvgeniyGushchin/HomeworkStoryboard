@@ -75,12 +75,16 @@ struct AlgoProvider {
             "Simulated annealing",
         ]
     }
+    var allSuffixSequences: [SuffixSequence] {
+        return all.map { SuffixSequence(string: $0) }
+    }
     
-    var allSuffixSequences: [AlgoSuffix] {
-        return all.reduce(into: [AlgoSuffix]()) { (suffixes, algoName) in
-            for suffix in SuffixSequence(string: algoName) {
-                suffixes.append(AlgoSuffix(suffix: String(suffix.lowercased()), algoName: algoName))
+    var allAlgoSuffixes: [AlgoSuffix] {
+        return allSuffixSequences.reduce(into: [AlgoSuffix]()) { (suffixes, suffixSequence) in
+            let algoSuffixes = suffixSequence.map { suffix -> AlgoSuffix in
+                return AlgoSuffix(suffix: String(suffix.lowercased()), algoName: suffixSequence.string)
             }
+            suffixes.append(contentsOf: algoSuffixes)
         }.sorted { (algoSuffix1, algoSuffix2) -> Bool in
             return algoSuffix1.suffix < algoSuffix2.suffix
         }

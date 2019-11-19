@@ -26,7 +26,7 @@ class ArrayViewController: DataStructuresViewController {
     
     //MARK: - Variables
     
-    let arrayManipulator: ArrayManipulator = SuffixArrayManipulator(array: AlgoProvider().allSuffixSequences)
+    let arrayManipulator: ArrayManipulator = SuffixArrayManipulator(array: AlgoProvider().allAlgoSuffixes)
     
     var creationTime: TimeInterval = 0
     var insertAt0Time: TimeInterval = 0
