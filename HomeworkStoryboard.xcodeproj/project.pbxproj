@@ -21,6 +21,7 @@
 		651B850423164F4000FF6119 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651B850223164F4000FF6119 /* Detail.storyboard */; };
 		651B85062316502300FF6119 /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B85052316502300FF6119 /* UserCard.swift */; };
 		651B85092316504400FF6119 /* UserCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651B85082316504400FF6119 /* UserCard.xib */; };
+		653B81802383AB4D00325F40 /* PhoneMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B817F2383AB4D00325F40 /* PhoneMask.swift */; };
 		65658586232D554000E6547D /* BenchMarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65658585232D554000E6547D /* BenchMarkViewModel.swift */; };
 		6565858A232D5E0C00E6547D /* SomeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65658589232D5E0C00E6547D /* SomeLayout.swift */; };
 		6565858C232D63D800E6547D /* ListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6565858B232D63D800E6547D /* ListLayout.swift */; };
@@ -53,6 +54,7 @@
 		651B850323164F4000FF6119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HomeworkStoryboard/Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
 		651B85052316502300FF6119 /* UserCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserCard.swift; path = ../UserCard.swift; sourceTree = "<group>"; };
 		651B85082316504400FF6119 /* UserCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCard.xib; sourceTree = "<group>"; };
+		653B817F2383AB4D00325F40 /* PhoneMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneMask.swift; sourceTree = "<group>"; };
 		6564A4D52366EA7900540CB3 /* MyHomeWorkUIKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyHomeWorkUIKit; path = ../../../MyHomeWorkUIKit; sourceTree = "<group>"; };
 		65658585232D554000E6547D /* BenchMarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchMarkViewModel.swift; sourceTree = "<group>"; };
 		65658589232D5E0C00E6547D /* SomeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeLayout.swift; sourceTree = "<group>"; };
@@ -180,6 +182,14 @@
 			path = UserCard;
 			sourceTree = "<group>";
 		};
+		653B817E2383AB4D00325F40 /* Mask */ = {
+			isa = PBXGroup;
+			children = (
+				653B817F2383AB4D00325F40 /* PhoneMask.swift */,
+			);
+			path = Mask;
+			sourceTree = "<group>";
+		};
 		65658588232D5DFB00E6547D /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +202,7 @@
 		656BF4952323E78B00B6DCA3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				653B817E2383AB4D00325F40 /* Mask */,
 				65658588232D5DFB00E6547D /* Layouts */,
 				656BF4962323E79D00B6DCA3 /* Behavior */,
 			);
@@ -317,6 +328,7 @@
 				656BF49D2323F5F500B6DCA3 /* NightModeBehavior.swift in Sources */,
 				6565858A232D5E0C00E6547D /* SomeLayout.swift in Sources */,
 				6565858C232D63D800E6547D /* ListLayout.swift in Sources */,
+				653B81802383AB4D00325F40 /* PhoneMask.swift in Sources */,
 				65658586232D554000E6547D /* BenchMarkViewModel.swift in Sources */,
 				656BF49F2323FF1500B6DCA3 /* TabController.swift in Sources */,
 				65144309232CBEA300931300 /* FeedViewController.swift in Sources */,
